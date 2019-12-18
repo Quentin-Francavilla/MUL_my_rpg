@@ -5,8 +5,7 @@
 ## M
 ##
 
-SRC	=	./lib/my/*.c \
-		./src/*.c \
+SRC	=	./src/*.c \
 		./src/create/*.c \
 		./src/tools/*.c \
 		./src/characters/jotaro/*.c \
@@ -35,14 +34,17 @@ SRC	=	./lib/my/*.c \
 		./src/events/*.c \
 		./src/characters/jotaro/stats/*.c \
 
-OBJ	=	$(patsubst $(SRCDIR)/%.c,$(OBJDIR)/%.o,$(SRCS))
+OBJ	=	$(SRC:.c=.o)
 
 NAME	=	my_rpg
+
+FLAG	=	-W -Wall -Werror -Wextra
 
 all:	$(NAME)
 
 $(NAME):	$(OBJ)
-	gcc $(SRC) -o $(NAME) -lcsfml-graphics -lcsfml-window -lcsfml-system -lcsfml-audio
+	$(MAKE) -C lib/my
+	gcc $(SRC) -o $(NAME) -L./lib/my -lmy -lcsfml-graphics -lcsfml-window -lcsfml-system -lcsfml-audio
 	rm -f $(OBJ)
 clean:
 	rm -f $(OBJ)
@@ -51,9 +53,5 @@ fclean:	clean
 	rm -f $(NAME)
 
 re:	fclean all
-
-
-FLAGS	=	-w
-
 
 #.PHONY
