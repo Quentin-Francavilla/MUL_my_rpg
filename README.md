@@ -12,7 +12,7 @@
 
 ![alt text](https://i.imgur.com/gYPcdSL.jpg?1)
 
-## Requierements
+## Requirements
 
 CSFML Library (https://www.sfml-dev.org/download/csfml/index-fr.php)
 
@@ -28,4 +28,4 @@ You have a tutorial in game !
 
 ## Authors
 
-Project made in 2019 by LOMBARDO Lucas, WEISSBECK Stéphane, RAILLON Lilian et FRANCAVILLA Quentin
+Project made in 2019 by [LOMBARDO Lucas](https://www.linkedin.com/in/lucas-lombardo-173062187/), WEISSBECK Stéphane, [RAILLON Lilian](https://www.linkedin.com/in/lilian-raillon-190a4a177/) et [FRANCAVILLA Quentin](https://www.linkedin.com/in/quentin-francavilla-585106179/)
