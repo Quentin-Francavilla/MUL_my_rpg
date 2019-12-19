@@ -12,7 +12,7 @@
 
 ![alt text](https://i.imgur.com/gYPcdSL.jpg?1)
 
-![alt text](https://thumbs.gfycat.com/LinedDeficientArmyworm-mobile.mp4)
+![alt text](https://media.giphy.com/media/H4oREYqFnHNsdUqtJU/giphy.gif)
 
 ## Requirements
 
