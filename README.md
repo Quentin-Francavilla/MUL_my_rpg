@@ -12,13 +12,13 @@
 
 ![alt text](https://i.imgur.com/gYPcdSL.jpg?1)
 
+![alt text](https://thumbs.gfycat.com/LinedDeficientArmyworm-mobile.mp4)
+
 ## Requirements
 
 CSFML Library (https://www.sfml-dev.org/download/csfml/index-fr.php)
 
 ## Usage
-
-To play
 
 ```bash
 ./my_rpg
