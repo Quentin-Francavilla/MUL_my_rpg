@@ -36,7 +36,6 @@ void hol_display_ded(v_var *a)
         if (a->hol->gain_exp == 0)
             a->stats->xp += 500;
         a->hol->gain_exp = 1;
-        a->inv->inv_key_2 = 1;
         sfSprite_setTexture(a->hud_fight->s_msg,
         a->hol->t_key_2, sfTrue);
         sfRenderWindow_drawSprite(a->_ptr->window,
@@ -50,6 +49,8 @@ void hol_display_ded(v_var *a)
         sfRenderWindow_drawSprite(a->_ptr->window,
         a->hud_other->s_press_continue, NULL);
     }
+    if (a->hol->hol_ded == 1)
+        a->inv->inv_key_2 = 1;
 }
 
 void hol_display_1(v_var *a)

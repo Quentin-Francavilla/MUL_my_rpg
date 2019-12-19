@@ -60,7 +60,6 @@ void ice_display_ded(v_var *a)
         if (a->ice->gain_exp == 0)
             a->stats->xp += 500;
         a->ice->gain_exp = 1;
-        a->inv->inv_key_1 = 1;
         sfRenderWindow_drawSprite(a->_ptr->window,
         a->rpg->s_you_won, NULL);
         sfSprite_setTexture(a->hud_fight->s_msg,
@@ -74,6 +73,8 @@ void ice_display_ded(v_var *a)
         sfRenderWindow_drawSprite(a->_ptr->window,
         a->hud_other->s_press_continue, NULL);
     }
+    if (a->ice->ice_ded == 1)
+        a->inv->inv_key_1 = 1;
 }
 
 void ice_display(v_var *a)

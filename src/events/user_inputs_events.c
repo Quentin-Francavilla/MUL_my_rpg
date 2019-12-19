@@ -43,7 +43,7 @@ void open_fight_menu(v_var *a)
 void interactions_with_space(v_var *a)
 {
     if (a->_ptr->event.type == sfEvtKeyPressed
-    && sfKeyboard_isKeyPressed(sfKeySpace) && a->rpg->fight == 2) {
+    && sfKeyboard_isKeyPressed(sfKeySpace) && a->rpg->fight == 2 && a->jo->jotaro_wich_attack == 0) {
         a->rpg->dialogue = 1;
     }
 }

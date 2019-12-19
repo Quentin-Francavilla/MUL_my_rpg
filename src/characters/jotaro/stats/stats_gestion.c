@@ -10,35 +10,12 @@
 
 void strength(v_var *a)
 {
-    if (a->stats->level == 1)
-        a->stats->strength = 1 + a->stats->strength_bonus;
-    if (a->stats->level == 2)
-        a->stats->strength = 2 + a->stats->strength_bonus;
-    if (a->stats->level == 3)
-        a->stats->strength = 3 + a->stats->strength_bonus;
-    if (a->stats->level == 4)
-        a->stats->strength = 4 + a->stats->strength_bonus;
-    if (a->stats->level == 5)
-        a->stats->strength = 5 + a->stats->strength_bonus;
+    a->stats->strength = a->stats->level + a->stats->strength_bonus;
 }
 
 void hp(v_var *a)
 {
-    if (a->stats->level == 1)
-        a->stats->hp_max = 2000 + a->stats->hp_bonus;
-
-    if (a->stats->level == 2)
-        a->stats->hp_max = 2500 + a->stats->hp_bonus;
-
-    if (a->stats->level == 3)
-        a->stats->hp_max = 4000 + a->stats->hp_bonus;
-
-    if (a->stats->level == 4)
-        a->stats->hp_max = 5500 + a->stats->hp_bonus;
-
-    if (a->stats->level == 5)
-        a->stats->hp_max = 7500 + a->stats->hp_bonus;
-
+    a->stats->hp_max = 1500 + a->stats->hp_bonus + (500 * a->stats->level); 
     if (a->rpg->fight != 1)
         a->jo->jotaro_life = a->stats->hp_max;
 }
